@@ -23,10 +23,11 @@ The database is called `autos_db`, you can create it in your db manager of choic
 - Password: admin
 
 You can create the user and grant the privileges with this command:
-`CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+```
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
 GRANT ALL PRIVILEGES ON autos_db.* TO 'admin'@'localhost';
 FLUSH PRIVILEGES;
-`
+```
 You can change the db_name, port, the username and password, in the `application.properties` file.
 ### 3. Run the project
 To run the project, you can use the following command:
